@@ -1,0 +1,82 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Space out the buttons evenly */
+  margin-top: 10px; /* Add some space above the buttons */
+}
+
+.button-container button {
+  flex: 1; /* Allow buttons to grow equally */
+  margin-right: 10px; /* Space between buttons */
+}
+
+.button-container button:last-child {
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+ul {
+  display: flex;
+  flex-direction: row; /* Items will be in a row */
+  flex-wrap: wrap; /* Allow wrapping to multiple lines */
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 18%; /* 18% width to fit 5 tasks per line (with gaps) */
+  gap: 0.5rem;
+  background: #fff;
+  margin: 2px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li:hover {
+  background: #f0f0f0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
